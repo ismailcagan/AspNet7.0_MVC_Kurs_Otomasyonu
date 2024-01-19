@@ -1,0 +1,1 @@
+# AspNet7.0_MVC_Kurs_Otomasyonu
