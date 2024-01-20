@@ -1,0 +1,13 @@
+@model Ogrenci
+
+<form asp-controller="Ogrenci" asp-action="Delete" method="post">
+    <input type="hidden" asp-for="@Model.OgrenciId">
+    <div class="container">
+        <p><i class="text-danger">@Model.OgrenciAd  @Model.OgrenciSoyAd </i> Adlı Oğrenciyi Silmek istiyormusunuz </p>
+    </div>
+    <div class="form-control">
+        <button type="submit" class="btn btn-primary">Evet</button>
+        <a type="button" asp-controller="Ogrenci" asp-action="Index" class="btn btn-danger">Hayır</a>
+    </div>
+
+</form>

@@ -1,0 +1,35 @@
+@model IEnumerable<KursKayit>
+
+<h2>KursKayit Listesi</h2>
+
+<a href="/KursKayit/Create" class="btn btn-primary">KursKayit Ekle</a>
+<hr>
+
+<table class="table table-bordered teble-hover">
+    <thead>
+        <tr>
+            <th>@Html.DisplayNameFor(m => m.KayitId)</th>
+            <th>@Html.DisplayNameFor(m => m.Ogrenci.OgrenciAdSoyAd)</th>
+            <th>@Html.DisplayNameFor(m => m.Kurs.KursBaslik)</th>
+            <th>@Html.DisplayNameFor(m => m.KayitTarihi)</th>
+            <th style="width: 150px;"></th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (KursKayit kursKayit in Model)
+        {
+            <tr>
+                <td>@Html.DisplayFor(modelItem => kursKayit.KayitId)</td>
+                <td>@Html.DisplayFor(modelItem => kursKayit.Ogrenci.OgrenciAdSoyAd)</td>
+                <td>@Html.DisplayFor(modelItem => kursKayit.Kurs.KursBaslik)</td>
+                <td>@Html.DisplayFor(modelItem => kursKayit.KayitTarihi)</td>
+                <td>
+                    <a asp-controller="KursKayit" asp-action="Edit" asp-route-id="@kursKayit.KayitId"
+                        class="btn btn-sm btn-primary">Edit</a>
+                    <a asp-controller="KursKayit" asp-action="Delete" asp-route-id="@kursKayit.KayitId"
+                        class="btn btn-sm btn-danger">Delete</a>
+                </td>
+            </tr>
+        }
+    </tbody>
+</table>

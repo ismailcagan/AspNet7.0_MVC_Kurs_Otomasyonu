@@ -1,4 +1,5 @@
 ﻿using System.Diagnostics;
+using KursOtomasyonuApp.Data;
 using Microsoft.AspNetCore.Mvc;
 
 namespace KursOtomasyonuApp.Controllers;

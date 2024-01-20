@@ -61,3 +61,7 @@ C:\Users\Ares\Documents\GitHub\AspNet7.0_MVC_Kurs_Otomasyonu\KursOtomasyonuApp\b
 C:\Users\Ares\Documents\GitHub\AspNet7.0_MVC_Kurs_Otomasyonu\KursOtomasyonuApp\bin\Debug\net7.0\runtimes\win-x64\native\e_sqlite3.dll
 C:\Users\Ares\Documents\GitHub\AspNet7.0_MVC_Kurs_Otomasyonu\KursOtomasyonuApp\bin\Debug\net7.0\runtimes\win-x86\native\e_sqlite3.dll
 C:\Users\Ares\Documents\GitHub\AspNet7.0_MVC_Kurs_Otomasyonu\KursOtomasyonuApp\obj\Debug\net7.0\KursOtomasyonuApp.csproj.CopyComplete
+C:\Users\Ares\Documents\GitHub\AspNet7.0_MVC_Kurs_Otomasyonu\KursOtomasyonuApp\bin\Debug\net7.0\Humanizer.dll
+C:\Users\Ares\Documents\GitHub\AspNet7.0_MVC_Kurs_Otomasyonu\KursOtomasyonuApp\bin\Debug\net7.0\Microsoft.EntityFrameworkCore.Design.dll
+C:\Users\Ares\Documents\GitHub\AspNet7.0_MVC_Kurs_Otomasyonu\KursOtomasyonuApp\bin\Debug\net7.0\Mono.TextTemplating.dll
+C:\Users\Ares\Documents\GitHub\AspNet7.0_MVC_Kurs_Otomasyonu\KursOtomasyonuApp\bin\Debug\net7.0\System.CodeDom.dll

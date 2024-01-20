@@ -1,0 +1,41 @@
+@model Ogrenci
+
+<h4>Ogenci Günceller</h4>
+<hr>
+
+<div class="row">
+    <div class="col-8">
+        <form asp-controller="Ogrenci" asp-action="Edit" method="post">
+            <input type="hidden" asp-for="OgrenciId">
+            <div class="mb-3">
+                <label asp-for="OgrenciAd" class="form-label">Ogrenci Adi</label>
+                <input asp-for="OgrenciAd" class="form-control" />
+            </div>
+            <div class="mb-3">
+                <label asp-for="OgrenciSoyAd" class="form-label">Ogrenci SoyAdi</label>
+                <input asp-for="OgrenciSoyAd" class="form-control" />
+            </div>
+            <div class="mb-3">
+                <label asp-for="EPosta" class="form-label">Ogrenci E-Posta</label>
+                <input asp-for="EPosta" class="form-control" />
+            </div>
+            <div class="mb-3">
+                <label asp-for="Telefon" class="form-label">Ogrenci Telefon</label>
+                <input asp-for="Telefon" class="form-control" />
+            </div>
+            <button type="submit" class="btn btn-primary">Güncelle</button>
+        </form>
+    </div>
+
+    <div class="col-4">
+        <h4>Kurslar</h4>
+        <hr>
+        <ul>
+            @foreach (var item in Model.kursKayitlari)
+            {
+                <li>@item.Kurs.KursBaslik</li>
+            }
+        </ul>
+
+    </div>
+</div>
