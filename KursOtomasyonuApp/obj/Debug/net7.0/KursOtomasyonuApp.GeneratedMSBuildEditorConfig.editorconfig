@@ -20,10 +20,6 @@ build_property._RazorSourceGeneratorDebug =
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxJbmRleC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Ares/Documents/GitHub/AspNet7.0_MVC_Kurs_Otomasyonu/KursOtomasyonuApp/Views/Home/Privacy.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxQcml2YWN5LmNzaHRtbA==
-build_metadata.AdditionalFiles.CssScope = 
-
 [C:/Users/Ares/Documents/GitHub/AspNet7.0_MVC_Kurs_Otomasyonu/KursOtomasyonuApp/Views/KursKayit/Create.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcS3Vyc0theWl0XENyZWF0ZS5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
@@ -62,6 +58,22 @@ build_metadata.AdditionalFiles.CssScope =
 
 [C:/Users/Ares/Documents/GitHub/AspNet7.0_MVC_Kurs_Otomasyonu/KursOtomasyonuApp/Views/Ogrenci/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcT2dyZW5jaVxJbmRleC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Ares/Documents/GitHub/AspNet7.0_MVC_Kurs_Otomasyonu/KursOtomasyonuApp/Views/Ogretmen/Create.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcT2dyZXRtZW5cQ3JlYXRlLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Ares/Documents/GitHub/AspNet7.0_MVC_Kurs_Otomasyonu/KursOtomasyonuApp/Views/Ogretmen/Delete.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcT2dyZXRtZW5cRGVsZXRlLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Ares/Documents/GitHub/AspNet7.0_MVC_Kurs_Otomasyonu/KursOtomasyonuApp/Views/Ogretmen/Edit.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcT2dyZXRtZW5cRWRpdC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Ares/Documents/GitHub/AspNet7.0_MVC_Kurs_Otomasyonu/KursOtomasyonuApp/Views/Ogretmen/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcT2dyZXRtZW5cSW5kZXguY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
 [C:/Users/Ares/Documents/GitHub/AspNet7.0_MVC_Kurs_Otomasyonu/KursOtomasyonuApp/Views/Shared/_ValidationScriptsPartial.cshtml]

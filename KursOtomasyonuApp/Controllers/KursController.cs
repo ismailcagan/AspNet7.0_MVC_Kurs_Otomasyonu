@@ -1,5 +1,6 @@
 using KursOtomasyonuApp.Data;
 using Microsoft.AspNetCore.Mvc;
+using Microsoft.AspNetCore.Mvc.Rendering;
 using Microsoft.EntityFrameworkCore;
 
 namespace KursOtomasyonuApp.Controllers
@@ -15,13 +16,16 @@ namespace KursOtomasyonuApp.Controllers
 
         public async Task<IActionResult> Index()
         {
-            var kurs = await _context.Kurslar.ToListAsync();
+            var kurs = await _context.Kurslar.
+                            Include(x=>x.Ogretmen).
+                            ToListAsync();
             return View(kurs);
         }
 
         [HttpGet]
         public IActionResult Create()
         {
+            ViewBag.Ogretmenler = new SelectList( _context.Ogretmenler.ToList(),"OgretmenId","Ad");
             return View();
         }
 
@@ -36,11 +40,13 @@ namespace KursOtomasyonuApp.Controllers
         [HttpGet]
         public async Task<IActionResult> Edit(int? id)
         {
+            ViewBag.Ogretmenler =  new SelectList( _context.Ogretmenler.ToList(),"OgretmenId","Ad");
             if (id == null)
             {
                 return NotFound();
             }
             Kurs? kurs = await _context.Kurslar
+                        .Include(x=>x.Ogretmen)
                         .Include(x=>x.kursKayitlari)
                         .ThenInclude(x=>x.Ogrenci)
                         .FirstOrDefaultAsync(x=>x.KursId==id);
@@ -59,13 +65,9 @@ namespace KursOtomasyonuApp.Controllers
             {
                 return NotFound();
             }
-            if(ModelState.IsValid)
-            {
-                 _context.Kurslar.Update(kurs);
+                _context.Kurslar.Update(kurs);
                 await _context.SaveChangesAsync();
                 return RedirectToAction("Index");
-            }
-            return View();
         }
 
         [HttpGet]

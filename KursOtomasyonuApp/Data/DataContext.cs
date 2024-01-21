@@ -11,5 +11,6 @@ namespace KursOtomasyonuApp.Data
         public DbSet<Ogrenci> Ogrencis => Set<Ogrenci>();
         public DbSet<KursKayit> kursKayits => Set<KursKayit>();
         public DbSet<Kurs> Kurslar => Set<Kurs>();
+         public DbSet<Ogretmen> Ogretmenler => Set<Ogretmen>();
     }
 }

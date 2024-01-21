@@ -11,6 +11,12 @@
                 <label asp-for="KursBaslik" class="form-label">Kurs Adi</label>
                 <input asp-for="KursBaslik" class="form-control" />
             </div>
+            <div class="mb-3">
+                <label asp-for="OgretmenId" class="form-label">Ogretmen</label>
+                <select asp-for="OgretmenId" asp-items="@ViewBag.Ogretmenler" class="form-select">
+                    <option>...</option>
+                </select>
+            </div>
             <button type="submit" class="btn btn-primary">Güncelle</button>
         </form>
     </div>
@@ -20,7 +26,7 @@
         <ul>
             @foreach(var item in Model.kursKayitlari)
             {
-                <li>@item.Kurs.KursBaslik</li>
+                <li>@item.Ogrenci.OgrenciAdSoyAd</li>
             }
         </ul>
     </div>

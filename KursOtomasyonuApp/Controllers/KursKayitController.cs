@@ -17,7 +17,7 @@ namespace KursOtomasyonuApp.Controllers
         [HttpGet]
         public async Task<IActionResult> Index()
         {
-            List<KursKayit>? kursKayit = await _context.kursKayits
+            List<KursKayit> kursKayit = await _context.kursKayits
                             .Include(x => x.Ogrenci)
                             .Include(x => x.Kurs)
                             .ToListAsync();

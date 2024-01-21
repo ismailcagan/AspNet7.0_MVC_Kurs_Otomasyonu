@@ -13,6 +13,22 @@
       "PackagePath": "staticwebassets\\favicon.ico"
     },
     {
+      "Id": "C:\\Users\\Ares\\Documents\\GitHub\\AspNet7.0_MVC_Kurs_Otomasyonu\\KursOtomasyonuApp\\wwwroot\\images\\elma.jpg",
+      "PackagePath": "staticwebassets\\images\\elma.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Ares\\Documents\\GitHub\\AspNet7.0_MVC_Kurs_Otomasyonu\\KursOtomasyonuApp\\wwwroot\\images\\ogr.jpg",
+      "PackagePath": "staticwebassets\\images\\ogr.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Ares\\Documents\\GitHub\\AspNet7.0_MVC_Kurs_Otomasyonu\\KursOtomasyonuApp\\wwwroot\\images\\ogrenci.png",
+      "PackagePath": "staticwebassets\\images\\ogrenci.png"
+    },
+    {
+      "Id": "C:\\Users\\Ares\\Documents\\GitHub\\AspNet7.0_MVC_Kurs_Otomasyonu\\KursOtomasyonuApp\\wwwroot\\images\\ogrencim.png",
+      "PackagePath": "staticwebassets\\images\\ogrencim.png"
+    },
+    {
       "Id": "C:\\Users\\Ares\\Documents\\GitHub\\AspNet7.0_MVC_Kurs_Otomasyonu\\KursOtomasyonuApp\\wwwroot\\js\\site.js",
       "PackagePath": "staticwebassets\\js\\site.js"
     },

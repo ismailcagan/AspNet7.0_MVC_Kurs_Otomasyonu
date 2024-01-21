@@ -1,0 +1,36 @@
+@model IEnumerable<Ogretmen>
+
+<h2>Ogretmen Listesi</h2>
+
+<a href="/Ogretmen/Create" class="btn btn-primary">Ogretmen Ekle</a><hr>
+
+<table class="table table-bordered teble-hover">
+    <thead>
+        <tr>
+            <th>@Html.DisplayNameFor(m => m.OgretmenId)</th>
+            <th>@Html.DisplayNameFor(m => m.Ad)</th>
+            <th>@Html.DisplayNameFor(m => m.SoyAd)</th>
+            <th>@Html.DisplayNameFor(m => m.EPosta)</th>
+            <th>@Html.DisplayNameFor(m => m.Telefon)</th>
+            <th>@Html.DisplayNameFor(m => m.BaslamaTarihi)</th>
+            <th style="width: 150px;"></th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (Ogretmen ogretmen in Model)
+        {
+            <tr>
+                <td>@Html.DisplayFor(modelItem=>ogretmen.OgretmenId)</td>
+                <td>@Html.DisplayFor(modelItem=>ogretmen.Ad)</td>
+                <td>@Html.DisplayFor(modelItem=>ogretmen.SoyAd)</td>
+                 <td>@Html.DisplayFor(modelItem=>ogretmen.EPosta)</td>
+                <td>@Html.DisplayFor(modelItem=>ogretmen.Telefon)</td>
+                <td>@Html.DisplayFor(modelItem=>ogretmen.BaslamaTarihi)</td>
+                <td>
+                    <a asp-controller="Ogretmen" asp-action="Edit" asp-route-id="@ogretmen.OgretmenId" class="btn btn-sm btn-primary">Edit</a>
+                    <a asp-controller="Ogretmen" asp-action="Delete" asp-route-id="@ogretmen.OgretmenId" class="btn btn-sm btn-danger">Delete</a>
+                </td>
+            </tr>
+        }
+    </tbody>
+</table>

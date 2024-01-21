@@ -1,8 +1,44 @@
-﻿@{
+﻿
+@{
     ViewData["Title"] = "Home Page";
 }
-
+<!--
 <div class="text-center">
     <h1 class="display-4">Welcome</h1>
     <p>Learn about <a href="https://docs.microsoft.com/aspnet/core">building Web apps with ASP.NET Core</a>.</p>
+</div>
+-->
+
+
+<!-- <img src="/KursOtomasyonuApp/img/elma.jpg" width="150" height="150" alt="ogrenci"/> -->
+
+<div class="d-flex justify-content-around" style="margin-top: 250px;">
+
+    <div class="col-example-3 text-center shadow-lg p-3 mb-5 bg-white rounded">
+        <a asp-controller="Ogrenci" asp-action="Index" class="link-secondary text-decoration-none">
+            <img src="~/images/öğrenci.png" width="150" height="150" alt="OGRENCİ"><hr>
+            <b>ÖĞRENCİ</b>
+        </a>
+    </div>
+
+     <div class="col-example-3 text-center shadow p-3 mb-5 bg-white rounded">
+        <a asp-controller="Ogretmen" asp-action="Index" class="link-secondary text-decoration-none">
+            <img src="~/images/öğretmen.jpg" width="150" height="150" alt="OGRETMEN"><hr>
+            <b>ÖĞRETMEN</b>
+        </a>
+    </div>
+
+      <div class="col-example-3 text-center shadow-sm p-3 mb-5 bg-white rounded">
+        <a asp-controller="Kurs" asp-action="Index" class="link-secondary text-decoration-none">
+            <img src="~/images/kurs.png" width="150" height="150" alt="KURS"><hr>
+            <b>KURSLAR</b>
+        </a>
+    </div>
+
+      <div class="col-example-3 text-center shadow-none p-3 mb-5 bg-light rounded">
+        <a asp-controller="KursKayit" asp-action="Index" class="link-secondary text-decoration-none">
+            <img src="~/images/kurs-kayit.jpg" width="150" height="150" alt="KURSKAYIT"><hr>
+            <b>KURS KAYIT</b>
+        </a>
+    </div>
 </div>
